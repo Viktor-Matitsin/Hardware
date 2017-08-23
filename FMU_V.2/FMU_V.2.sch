@@ -6279,6 +6279,52 @@ This layout follows the ST Micro design guidelines for LGA packages found at:&lt
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
 </package>
+<package name="SJ_2W">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="3.175" y1="-1.524" x2="-3.175" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.524" x2="3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="1.27" x2="-3.175" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.175" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.175" y1="-1.524" x2="3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.429" y1="-1.27" x2="3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.524" x2="3.175" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="0" x2="-3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="0.127" x2="2.032" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
+<package name="SJ_2">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SJ">
@@ -6290,6 +6336,22 @@ This layout follows the ST Micro design guidelines for LGA packages found at:&lt
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SJ_2">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6312,6 +6374,34 @@ This layout follows the ST Micro design guidelines for LGA packages found at:&lt
 <connects>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SJ2W" prefix="SJ" uservalue="yes">
+<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SJ_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="W" package="SJ_2W">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SJ_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6818,10 +6908,6 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <part name="GND76" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND77" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND78" library="pixhawk2" deviceset="GND" device=""/>
-<part name="!VBUS_V" library="pixhawk2" deviceset="PAD" device=".04">
-<attribute name="BOM" value="EXCLUDE"/>
-<attribute name="PARTNO" value="*"/>
-</part>
 <part name="GND81" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND85" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND86" library="pixhawk2" deviceset="GND" device=""/>
@@ -6850,14 +6936,6 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <part name="GND106" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND110" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND9" library="pixhawk2" deviceset="GND" device=""/>
-<part name="!VDD_SERVO" library="pixhawk2" deviceset="PAD" device=".04">
-<attribute name="BOM" value="EXCLUDE"/>
-<attribute name="PARTNO" value="*"/>
-</part>
-<part name="!VDD_BRICK" library="pixhawk2" deviceset="PAD" device=".04">
-<attribute name="BOM" value="EXCLUDE"/>
-<attribute name="PARTNO" value="*"/>
-</part>
 <part name="VDD_5V_IN" library="pixhawk2" deviceset="PAD" device=".04">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
@@ -7194,7 +7272,7 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <part name="GND70" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND84" library="pixhawk2" deviceset="GND" device=""/>
 <part name="D302" library="fmu2" deviceset="DIODE-SCHOTTKY" device="_MSMP" value="MSS1P4-M3/89A"/>
-<part name="R706" library="pixhawk2" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="R706" library="pixhawk2" deviceset="RESISTOR" device="0603-RES" value="220R"/>
 <part name="GND58" library="pixhawk2" deviceset="GND" device=""/>
 <part name="C804" library="pixhawk2" deviceset="CAP" device="0603" value="0u1"/>
 <part name="C803" library="pixhawk2" deviceset="CAP" device="0805" value="10u/25V"/>
@@ -7204,6 +7282,12 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <part name="GND109" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND45" library="pixhawk2" deviceset="GND" device=""/>
 <part name="USB1" library="pixhawk2" deviceset="MOLEX-47346-0001" device=""/>
+<part name="GND51" library="pixhawk2" deviceset="GND" device=""/>
+<part name="R104" library="pixhawk2" deviceset="RESISTOR" device="0603-RES" value="1M"/>
+<part name="R103" library="pixhawk2" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="GND53" library="pixhawk2" deviceset="GND" device=""/>
+<part name="SJ4" library="jumper" deviceset="SJ2W" device=""/>
+<part name="GND56" library="pixhawk2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7251,6 +7335,12 @@ FRAM</text>
 <instance part="F-CLK" gate="G$1" x="25.4" y="38.1" rot="MR0"/>
 <instance part="F-DIO" gate="G$1" x="25.4" y="30.48" rot="MR0"/>
 <instance part="F-VDD_3V3" gate="G$1" x="25.4" y="22.86" rot="MR0"/>
+<instance part="GND51" gate="1" x="226.06" y="152.4"/>
+<instance part="R104" gate="G$1" x="215.9" y="157.48"/>
+<instance part="R103" gate="G$1" x="142.24" y="152.4"/>
+<instance part="GND53" gate="1" x="149.86" y="147.32"/>
+<instance part="SJ4" gate="G$1" x="63.5" y="86.36" rot="MR90"/>
+<instance part="GND56" gate="1" x="63.5" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -7267,7 +7357,7 @@ FRAM</text>
 <label x="38.1" y="30.48" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PB2-BOOT1" class="0">
+<net name="PC5" class="0">
 <segment>
 <wire x1="33.02" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U101" gate="PORTB_L" pin="PB2"/>
@@ -7337,6 +7427,23 @@ FRAM</text>
 <wire x1="172.72" y1="43.18" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 <junction x="172.72" y="43.18"/>
 <pinref part="C101" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND51" gate="1" pin="GND"/>
+<wire x1="226.06" y1="154.94" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R104" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R103" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="152.4" x2="149.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="152.4" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="GND53" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SJ4" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="81.28" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="GND56" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SERIAL_FMU_TO_IO" class="0">
@@ -7788,13 +7895,6 @@ FRAM</text>
 <label x="111.76" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PRESSURE_SENS" class="0">
-<segment>
-<pinref part="U101" gate="PORTC_L" pin="PC5"/>
-<label x="134.62" y="152.4" size="1.27" layer="95" xref="yes"/>
-<wire x1="134.62" y1="152.4" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FMU-UART8_TX" class="0">
 <segment>
 <pinref part="U101" gate="PORTE_L" pin="PE1"/>
@@ -7814,13 +7914,6 @@ FRAM</text>
 <pinref part="U101" gate="PORTE_H" pin="PE15"/>
 <wire x1="175.26" y1="119.38" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
 <label x="180.34" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VDD_3V3_SENSORS_EN" class="0">
-<segment>
-<pinref part="U101" gate="PORTE_L" pin="PE3"/>
-<wire x1="175.26" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
-<label x="180.34" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -7896,15 +7989,17 @@ FRAM</text>
 <net name="!VDD_BRICK_VALID" class="0">
 <segment>
 <pinref part="U101" gate="PORTB_L" pin="PB5"/>
-<wire x1="33.02" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<label x="38.1" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SJ4" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="86.36" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!VDD_SERVO_VALID" class="0">
 <segment>
 <pinref part="U101" gate="PORTB_L" pin="PB7"/>
-<wire x1="33.02" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
-<label x="38.1" y="91.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SJ4" gate="G$1" pin="3"/>
+<wire x1="58.42" y1="86.36" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATT_CURRENT_SENS" class="0">
@@ -7949,6 +8044,20 @@ FRAM</text>
 <label x="111.76" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="N$14" class="1">
+<segment>
+<pinref part="U101" gate="PORTE_L" pin="PE3"/>
+<wire x1="175.26" y1="157.48" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R104" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U101" gate="PORTC_L" pin="PC5"/>
+<wire x1="106.68" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R103" gate="G$1" pin="1"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -7982,8 +8091,7 @@ Vf(typ): 3.3V
 Target If: 6.6mA
 Selected R: 220
 Cacluated If @ 5.5V: 10mA</text>
-<text x="127" y="22.86" size="1.778" layer="97">+ SIGNAL
-_</text>
+<text x="124.46" y="25.4" size="1.778" layer="97">Buzzer</text>
 <text x="50.8" y="104.14" size="1.778" layer="91" rot="R90">AMBER</text>
 <text x="63.5" y="104.14" size="1.778" layer="91" rot="R90">GREEN</text>
 <text x="106.68" y="83.82" size="1.778" layer="91" rot="R90">BLUE</text>
@@ -13065,13 +13173,13 @@ vision alignment.</text>
 <attribute name="PARTNO" x="215.9" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="BOM" x="215.9" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="F-BOOT" gate="G$1" x="152.4" y="88.9">
+<instance part="F-BOOT" gate="G$1" x="152.4" y="99.06">
+<attribute name="PARTNO" x="152.4" y="99.06" size="1.778" layer="96" display="off"/>
+<attribute name="BOM" x="152.4" y="99.06" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IO-BOOT0" gate="G$1" x="152.4" y="88.9">
 <attribute name="PARTNO" x="152.4" y="88.9" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" x="152.4" y="88.9" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="IO-BOOT0" gate="G$1" x="152.4" y="78.74">
-<attribute name="PARTNO" x="152.4" y="78.74" size="1.778" layer="96" display="off"/>
-<attribute name="BOM" x="152.4" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="DP" gate="G$1" x="215.9" y="78.74">
 <attribute name="PARTNO" x="215.9" y="78.74" size="1.778" layer="96" rot="R90" display="off"/>
@@ -13080,18 +13188,6 @@ vision alignment.</text>
 <instance part="GND" gate="G$1" x="215.9" y="109.22">
 <attribute name="PARTNO" x="215.9" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="BOM" x="215.9" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="!VBUS_V" gate="G$1" x="152.4" y="119.38">
-<attribute name="PARTNO" x="152.4" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="BOM" x="152.4" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="!VDD_SERVO" gate="G$1" x="152.4" y="109.22">
-<attribute name="PARTNO" x="152.4" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="BOM" x="152.4" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="!VDD_BRICK" gate="G$1" x="152.4" y="99.06">
-<attribute name="PARTNO" x="152.4" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="BOM" x="152.4" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="VDD_5V_IN" gate="G$1" x="215.9" y="99.06">
 <attribute name="PARTNO" x="215.9" y="99.06" size="1.778" layer="96" display="off"/>
@@ -13140,15 +13236,15 @@ vision alignment.</text>
 <net name="FMU-BOOT0" class="0">
 <segment>
 <pinref part="F-BOOT" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="139.7" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="144.78" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
+<label x="139.7" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IO-BOOT0" class="0">
 <segment>
 <pinref part="IO-BOOT0" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
-<label x="139.7" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="144.78" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="139.7" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="OTG_FS_DP" class="0">
@@ -13156,27 +13252,6 @@ vision alignment.</text>
 <pinref part="DP" gate="G$1" pin="P$1"/>
 <wire x1="208.28" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
 <label x="203.2" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!VBUS_VALID" class="0">
-<segment>
-<pinref part="!VBUS_V" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
-<label x="139.7" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!VDD_SERVO_VALID" class="0">
-<segment>
-<pinref part="!VDD_SERVO" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
-<label x="139.7" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!VDD_BRICK_VALID" class="0">
-<segment>
-<pinref part="!VDD_BRICK" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
-<label x="139.7" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VDD_5V_IN" class="1">
